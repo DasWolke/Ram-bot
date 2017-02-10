@@ -4,7 +4,7 @@ module.exports = {
     help: "Send a message and delete your message",
     func: (Client, msg, args) => {
         // change the configuration in memory
-        Client.config.prefix = comText[0];
+        Client.config.prefix = args[0];
         // Now we have to save the file.
         fs.writeFile('./config/config.json', JSON.stringify(Client.config), (err) => {
             if (err) console.error(err);

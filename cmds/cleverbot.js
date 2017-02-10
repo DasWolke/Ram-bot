@@ -10,7 +10,7 @@ module.exports = {
                 setTimeout(() => {
                     msg.channel.sendMessage(response.message).catch(console.error);
                     msg.channel.stopTyping();
-                }, Math.random() * (1 - 3) + 1 * 1000);
+                }, Math.random() * (1 - 3) + 1000);
             });
         })
     }
